@@ -42,4 +42,3 @@ streets.addTo(map);
 // mapbox/dark-v10
 // mapbox/satellite-v9
 // mapbox/satellite-streets-v11
-
