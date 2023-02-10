@@ -7,4 +7,4 @@ Developing an earthquake map showing
 - all earthquakes in last 7 days
 - major earthquakes >4.5 in last 7 days
 
-Due to differing scales of the all and major earthquakes, a second legend was added.
+Due to differing scales of the all and major earthquakes, a second legend was added. Code for both legends was edited to add titles.
