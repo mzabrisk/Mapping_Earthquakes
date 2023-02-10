@@ -41,6 +41,8 @@ let torontoHoods = "https://raw.githubusercontent.com/mzabrisk/Mapping_Earthquak
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
   console.log(data);
+
+  
 // Creating a GeoJSON layer with the retrieved data.
 L.geoJSON(data, {
   style: myStyle,
@@ -49,6 +51,7 @@ L.geoJSON(data, {
     layer.bindPopup("<h4> Neighborhood: " + feature.properties.AREA_NAME + "</h4>")
   }}).addTo(map);
 });
+
 
 // static tiles API
 // https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/1/1/0?access_token=pk.eyJ1IjoibXphYnJpc2siLCJhIjoiY2xkcnQ1cDRuMWdnNTN3cHdzd2x6bDYwaCJ9.OvQj-QtFcWz_fZOLcpJgyA
