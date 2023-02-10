@@ -5,19 +5,59 @@ console.log("working");
 let map = L.map('mapid').setView([34.0522, -118.2437], 14);
 
 //  Add a marker to the map for Los Angeles, California.
-let marker = L.marker([34.0522, -118.2437]).addTo(map);
 
-let marker2 = L.circle([34.0522, -118.2437], {
-    radius: 300,
-    color: 'black',
-    fillColor: 'yellow'
- }).addTo(map);
+// let marker = L.marker([34.0522, -118.2437]).addTo(map);
 
- let marker3 = L.circleMarker([34.0522, -118.2437], {
-    radius: 300,
-    color: "black",
-    fillColor: '#ffffa1'
- }).addTo(map);
+// let marker2 = L.circle([34.0522, -118.2437], {
+//     radius: 300,
+//     color: 'black',
+//     fillColor: 'yellow'
+//  }).addTo(map);
+
+//  let marker3 = L.circleMarker([34.0522, -118.2437], {
+//     radius: 300,
+//     color: "black",
+//     fillColor: '#ffffa1'
+//  }).addTo(map);
+
+ // An array containing each city's location, state, and population.
+let cities = [{
+    location: [40.7128, -74.0059],
+    city: "New York City",
+    state: "NY",
+    population: 8398748
+  },
+  {
+    location: [41.8781, -87.6298],
+    city: "Chicago",
+    state: "IL",
+    population: 2705994
+  },
+  {
+    location: [29.7604, -95.3698],
+    city: "Houston",
+    state: "TX",
+    population: 2325502
+  },
+  {
+    location: [34.0522, -118.2437],
+    city: "Los Angeles",
+    state: "CA",
+    population: 3990456
+  },
+  {
+    location: [33.4484, -112.0740],
+    city: "Phoenix",
+    state: "AZ",
+    population: 1660272
+  }
+  ];
+
+  // Loop through the cities array and create one marker for each city.
+cities.forEach(function(city) {
+    console.log(city)
+   });
+
 
 
 
@@ -42,3 +82,4 @@ streets.addTo(map);
 // mapbox/dark-v10
 // mapbox/satellite-v9
 // mapbox/satellite-streets-v11
+
