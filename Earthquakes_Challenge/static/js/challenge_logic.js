@@ -24,7 +24,7 @@ let navigationNight = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/navig
 
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
-	center: [40.7, -94.5],
+	center: [25, 0],
 	zoom: 3,
 	layers: [streets]
 });
